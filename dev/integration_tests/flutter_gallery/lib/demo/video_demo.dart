@@ -419,10 +419,13 @@ class _VideoDemoState extends State<VideoDemo> with SingleTickerProviderStateMix
             child: Scrollbar(
               child: ListView(
                 children: <Widget>[
-                  VideoCard(
+                  Opacity (
+                  opacity: 0.5,
+                  child: VideoCard(
                     title: 'Butterfly',
                     subtitle: '… flutters by',
                     controller: butterflyController,
+                  ),
                   ),
                   VideoCard(
                     title: 'Bee',
